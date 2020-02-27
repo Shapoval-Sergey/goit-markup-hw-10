@@ -7,12 +7,6 @@
 .featured__list {
   display: flex;
   flex-wrap: wrap;
-  &:nth-child(4n) {
-    margin-right: 0px;
-  }
-  &:nth-last-child(-n + 4) {
-    margin-bottom: 0px;
-  }
 }
 
 .featured__item {
@@ -40,6 +34,12 @@
   &:hover .desc-product__price,
   &:focus .desc-product__price {
     background-color: $price-choice-background-color;
+  }
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }
+  &:nth-last-child(-n + 4) {
+    margin-bottom: 0px;
   }
 }
 
